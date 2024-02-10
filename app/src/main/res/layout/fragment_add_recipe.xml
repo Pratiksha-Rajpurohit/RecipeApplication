@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddRecipe">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".AddRecipe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Add New Recipe"
+            android:textColor="@color/pink"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+
+
+            android:src="@drawable/add_image"
+
+            />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_select_image"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--           android:outlineAmbientShadowColor="@color/pink"-->
+        <!--            android:text="Select New image"-->
+        <!--            android:textColor="@color/pink"-->
+        <!--            android:textStyle="bold"-->
+        <!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:outlineProvider="bounds"-->
+        <!--            android:outlineSpotShadowColor="@color/pink"-->
+        <!--            android:shadowColor="@color/pink"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            />-->
+
+        <EditText
+            android:id="@+id/recipeNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#3E272E51"
+            android:hint=" Recipe Name "
+            android:inputType="text"
+            android:maxLines="2"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="15dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue" />
+
+        <EditText
+            android:id="@+id/ingredientEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#3E272E51"
+            android:hint=" Ingredient "
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="25dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+
+            />
+
+        <EditText
+            android:id="@+id/instructionEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#3E272E51"
+            android:hint="  Instruction "
+            android:inputType="textMultiLine"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="65dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+
+            />
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/instructionsLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Instructions"-->
+<!--            android:layout_margin="5dp"-->
+<!--            app:boxStrokeColor="@color/blue"-->
+<!--            app:hintTextColor="@color/blue">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/instructionEdt"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="textMultiLine"-->
+<!--                android:minLines="5"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <Button
+            android:id="@+id/saveRecipeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/pink"
+            android:outlineAmbientShadowColor="@color/pink"
+            android:outlineProvider="bounds"
+            android:padding="10dp"
+            android:text="Save "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

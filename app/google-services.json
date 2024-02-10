@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "505549707230",
+    "project_id": "recipeapplication-d02a9",
+    "storage_bucket": "recipeapplication-d02a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505549707230:android:1ad3accb348b16fdba6f4f",
+        "android_client_info": {
+          "package_name": "com.pratiksha.recipeapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRA4oRyWTcMszvRWvM52eqzsjstsROV7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
