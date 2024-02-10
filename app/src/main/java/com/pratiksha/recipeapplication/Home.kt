@@ -74,8 +74,8 @@ class Home : Fragment() {
                           val recipeImage = recipeData["Image"] as String
                           val recipeOwner = recipeData["Owner"] as String
                           val recipeId = document.id
-                          println("DATA MILA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-                          println("RECIPE ID >>>>>>>>>>>>>>>> $recipeId")
+                          // println("DATA MILA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+                          // println("RECIPE ID >>>>>>>>>>>>>>>> $recipeId")
 
                           val recipe = Recipe(recipeName,recipeIngredient,recipeInstruction,recipeImage,recipeOwner , recipeId  )
 
