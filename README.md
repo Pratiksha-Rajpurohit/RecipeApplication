@@ -30,4 +30,6 @@ This Recipe Application is designed to help users to share their favorite recipe
 * Firebase Firestore (Database)
 * Firebase Storage
   
-# Contributors
+
+# Contact
+For any questions or suggestions, please open an issue on GitHub or contact the repository owner at rajpurohitpratiksha123@gmail.com.
