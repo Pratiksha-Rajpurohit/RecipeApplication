@@ -17,7 +17,7 @@ This Recipe Application is designed to help users to share their favorite recipe
 * Connect your Android device or use an emulator.
 * Build and run the application.
 # Usage
-* Sign in to the application using your email and password or through Google authentication.
+* Sign in to the application using your email and password 
 * Navigate through the tabs to add a new recipe, view recipes, or manage your profile.
 * To add a new recipe, provide the required details and click "Save".
 * To view recipe details, click on a recipe card from the home screen.
