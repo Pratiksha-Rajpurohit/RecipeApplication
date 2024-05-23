@@ -8,7 +8,10 @@ This Recipe Application is designed to help users to share their favorite recipe
 * Browse Recipes: Users can browse through a collection of recipes to discover new ideas.
   
 # Screenshots
-
+![Screenshot 2024-05-23 172722](https://github.com/Pratiksha-Rajpurohit/RecipeApplication/assets/132194955/72b0dcac-f2d4-49d8-90d1-d565ef230751)
+![Screenshot 2024-05-23 172813](https://github.com/Pratiksha-Rajpurohit/RecipeApplication/assets/132194955/a446781e-2e5f-4cc7-beef-5a54da20fb23)
+![Screenshot 2024-05-23 172849](https://github.com/Pratiksha-Rajpurohit/RecipeApplication/assets/132194955/d6d15fd1-0f6f-4e7e-a030-ab889363ba6d)
+![Screenshot 2024-05-23 172910](https://github.com/Pratiksha-Rajpurohit/RecipeApplication/assets/132194955/7cb8f152-6a7a-43d7-995d-11c8a4c5e935)
 
 
 # Installation
