@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide
 
 class RecipeAdapter(
 //    private  var clickListener : ItemClickListener,
+    private  var fragmentName : String,
     private var arrayList: ArrayList<Recipe>,
     private  var context : Context
 //    private  var   clickListener : ItemClickListener
@@ -21,7 +22,7 @@ class RecipeAdapter(
     class ViewHolder (view : View) : RecyclerView.ViewHolder(view) {
 
         val name : TextView = view.findViewById(R.id.recipeNameTextView)
-//        val ingredient : TextView = view.findViewById(R.id.ingredientTextView)
+        //        val ingredient : TextView = view.findViewById(R.id.ingredientTextView)
 //        val instruction :TextView = view.findViewById(R.id.instructionTextView)
         val image : ImageView = view.findViewById(R.id.recipeImgView)
         val recipeCard : CardView = view.findViewById(R.id.recipeCard)
@@ -29,8 +30,17 @@ class RecipeAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeAdapter.ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.recipe_items_layout, parent , false)
+
+        var view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.recipe_items_layout, parent, false)
+
+        if (fragmentName == "profile") {
+            view = LayoutInflater.from(parent.context)
+                .inflate(R.layout.recipe_item_profile_layout, parent, false)
+        }
+
         return ViewHolder(view)
+
     }
 
     override fun onBindViewHolder(holder: RecipeAdapter.ViewHolder, position: Int) {
@@ -72,6 +82,7 @@ class RecipeAdapter(
 //    }
 
 }
+
 
 
 

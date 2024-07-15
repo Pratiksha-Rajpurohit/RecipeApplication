@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -34,7 +35,7 @@ class Home : Fragment() {
     private lateinit var recipeAdapter : RecipeAdapter
     private lateinit var recyclerView: RecyclerView
 
-    override fun onCreateView(
+    override fun onCreateView (
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
@@ -42,7 +43,7 @@ class Home : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container , false)
 
         recyclerView = binding.recyclerRecipe
-        recyclerView.layoutManager = GridLayoutManager(context,1)
+        recyclerView.layoutManager = GridLayoutManager(context,1, GridLayoutManager.VERTICAL,false)
 //        recycler view smooth
         recyclerView.setHasFixedSize(true)
 
@@ -51,59 +52,61 @@ class Home : Fragment() {
         return binding.root
     }
 
-  fun showRecipes() {
+    fun showRecipes() {
         val db = Firebase.firestore
 //      println("Show recipe is called............")
 
-      arrayRecipe = arrayListOf<Recipe>()
+        arrayRecipe = arrayListOf<Recipe>()
 
-      db.collection("recipes").get()
-          .addOnSuccessListener {
+
+
+        db.collection("recipes").get()
+            .addOnSuccessListener {
 //              println("Show recipe success.................................")
-              for (document in it){
-                  val recipeData = document.data
+                for (document in it){
+                    val recipeData = document.data
 
-                  try {
+                    try {
 
-                      if(recipeData != null){
+                        if(recipeData != null){
 //                          println("TRY BLOCK.................................")
 
-                          val recipeName = recipeData["Name"] as String
-                          val recipeIngredient = recipeData["Ingredient"] as String
-                          val recipeInstruction = recipeData["Instruction"] as String
-                          val recipeImage = recipeData["Image"] as String
-                          val recipeOwner = recipeData["Owner"] as String
-                          val recipeId = document.id
-                          // println("DATA MILA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-                          // println("RECIPE ID >>>>>>>>>>>>>>>> $recipeId")
+                            val recipeName = recipeData["Name"] as String
+                            val recipeIngredient = recipeData["Ingredient"] as String
+                            val recipeInstruction = recipeData["Instruction"] as String
+                            val recipeImage = recipeData["Image"] as String
+                            val recipeOwner = recipeData["Owner"] as String
+                            val recipeId = document.id
+                            // println("DATA MILA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+                            // println("RECIPE ID >>>>>>>>>>>>>>>> $recipeId")
 
-                          val recipe = Recipe(recipeName,recipeIngredient,recipeInstruction,recipeImage,recipeOwner , recipeId  )
+                            val recipe = Recipe(recipeName,recipeIngredient,recipeInstruction,recipeImage,recipeOwner , recipeId  )
 
-                          arrayRecipe.add(recipe)
+                            arrayRecipe.add(recipe)
 //                          println("NAME : $arrayRecipe ...................................................")
 
 
-                      }
+                        }
 
-                  }catch (e : Exception){
+                    }catch (e : Exception){
 //                      println("EXCEPTION.................................")
-                      e.printStackTrace()
-                  }
+                        e.printStackTrace()
+                    }
 
-                  if(arrayRecipe.isNotEmpty()){
-                      recipeAdapter = RecipeAdapter(arrayRecipe,requireContext())
+                    if(arrayRecipe.isNotEmpty()){
+                        recipeAdapter = RecipeAdapter("home",arrayRecipe,requireContext())
 
-                      recyclerView.adapter = recipeAdapter
+                        recyclerView.adapter = recipeAdapter
 
 
-                  }else{
-                      println("NO RECIPE....................................")
-                  }
-              }
-          }
-          .addOnFailureListener{
-              println("Fail to get Recipe Data........ $it")
-          }
-  }
+                    }else{
+                        println("NO RECIPE....................................")
+                    }
+                }
+            }
+            .addOnFailureListener{
+                println("Fail to get Recipe Data........ $it")
+            }
+    }
 
 }
