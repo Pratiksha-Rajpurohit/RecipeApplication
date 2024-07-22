@@ -6,14 +6,14 @@ This Recipe Application is designed to help users to share their favorite recipe
 * Add Recipe: Users can add new recipes by providing recipe name, ingredients, instructions, and an optional image.
 * View Recipe: Users can view the details of a specific recipe including its name, ingredients, instructions, and image.
 * Browse Recipes: Users can browse through a collection of recipes to discover new ideas.
-  
+
 # Screenshots
-![Screenshot 2024-05-23 174334](https://github.com/Pratiksha-Rajpurohit/RecipeApplication/assets/132194955/3c50de5e-ddb9-436b-9d94-5756188bb9b8)
-![Screenshot 2024-05-23 174252](https://github.com/Pratiksha-Rajpurohit/RecipeApplication/assets/132194955/48b1a86b-174a-42fc-b170-f4bb1490472e)
-![Screenshot 2024-05-23 172722](https://github.com/Pratiksha-Rajpurohit/RecipeApplication/assets/132194955/72b0dcac-f2d4-49d8-90d1-d565ef230751)
-![Screenshot 2024-05-23 172813](https://github.com/Pratiksha-Rajpurohit/RecipeApplication/assets/132194955/a446781e-2e5f-4cc7-beef-5a54da20fb23)
-![Screenshot 2024-05-23 172849](https://github.com/Pratiksha-Rajpurohit/RecipeApplication/assets/132194955/d6d15fd1-0f6f-4e7e-a030-ab889363ba6d)
-![Screenshot 2024-05-23 172910](https://github.com/Pratiksha-Rajpurohit/RecipeApplication/assets/132194955/7cb8f152-6a7a-43d7-995d-11c8a4c5e935)
+![Screenshot_2024-07-22-19-43-38-92_20e65ca91d49e212e6e34b0ca24f5d84](https://github.com/user-attachments/assets/e474246a-c413-4b1f-83c8-9f818dd60aad)
+![Screenshot_2024-07-22-19-30-47-12_20e65ca91d49e212e6e34b0ca24f5d84](https://github.com/user-attachments/assets/da98e927-b889-40cd-a2bf-a5554718816c)
+![Screenshot_2024-07-22-19-33-14-90_20e65ca91d49e212e6e34b0ca24f5d84](https://github.com/user-attachments/assets/13bea81e-245d-44bf-89f2-f55f56990fcb)
+![Screenshot_2024-07-22-19-33-31-86_20e65ca91d49e212e6e34b0ca24f5d84](https://github.com/user-attachments/assets/6195cde9-44fe-4930-b05b-49ac579a3a14)
+![Screenshot_2024-07-22-19-43-11-47_20e65ca91d49e212e6e34b0ca24f5d84](https://github.com/user-attachments/assets/e979be87-50da-4b0e-be19-bdac436a49c5)
+
 
 
 # Installation
