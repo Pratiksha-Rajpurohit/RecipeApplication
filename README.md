@@ -14,13 +14,6 @@ This Recipe Application is designed to help users to share their favorite recipe
 ![Screenshot_2024-07-22-19-33-31-86_20e65ca91d49e212e6e34b0ca24f5d84](https://github.com/user-attachments/assets/6195cde9-44fe-4930-b05b-49ac579a3a14)
 ![Screenshot_2024-07-22-19-43-11-47_20e65ca91d49e212e6e34b0ca24f5d84](https://github.com/user-attachments/assets/e979be87-50da-4b0e-be19-bdac436a49c5)
 
-
-
-# Installation
-* Clone the repository: git clone https://github.com/Pratiksha-Rajpurohit/Recipe-Application.git
-* Open the project in Android Studio.
-* Connect your Android device or use an emulator.
-* Build and run the application.
 # Usage
 * Sign in to the application using your email and password 
 * Navigate through the tabs to add a new recipe, view recipes, or manage your profile.
