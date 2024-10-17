@@ -7,6 +7,9 @@ This Recipe Application is designed to help users to share their favorite recipe
 * View Recipe: Users can view the details of a specific recipe including its name, ingredients, instructions, and image.
 * Browse Recipes: Users can browse through a collection of recipes to discover new ideas.
 
+# ScreenRecoding
+https://github.com/user-attachments/assets/5b8ecf2f-bf9c-42b9-a6b1-3b5a81372fe0
+
 # Screenshots
 ![Screenshot_2024-07-22-19-43-38-92_20e65ca91d49e212e6e34b0ca24f5d84](https://github.com/user-attachments/assets/e474246a-c413-4b1f-83c8-9f818dd60aad)
 ![Screenshot_2024-07-22-19-30-47-12_20e65ca91d49e212e6e34b0ca24f5d84](https://github.com/user-attachments/assets/da98e927-b889-40cd-a2bf-a5554718816c)
